@@ -44,12 +44,20 @@ body{
 
     var greet;
 
-    if (hrs < 12)
-        greet = '上午好  ';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = '下午好  ';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = '晚上好  ';
+    if (hrs < 6)
+        greet = "凌晨好  ";
+    if (hrs < 9) 
+        greet = "早上好  ";
+    if (hrs < 12) 
+        greet = "上午好  ";
+    if (hrs < 14) 
+        greet = "中午好  ";
+    if (hrs < 17) 
+        greet = "下午好  ";
+    if (hrs < 19) 
+        greet = "傍晚好  ";
+    if (hrs < 22) 
+       greet = "晚上好  ";
 
     document.getElementById('lbl').innerHTML =
         greet+=`<div id="date"> 现在是： ${date}</div>`;
