@@ -58,6 +58,8 @@ body{
         greet = "傍晚好  ";
     if (hrs < 22) 
        greet = "晚上好  ";
+       if (hrs < 24) 
+       greet = "夜深了  ";
 
     document.getElementById('lbl').innerHTML =
         greet+=`<div id="date"> 现在是： ${date}</div>`;
