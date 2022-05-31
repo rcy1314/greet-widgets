@@ -44,21 +44,21 @@ body{
 
     var greet;
 
-    if (hrs < 6)
+    if (hrs >= 0 && hrs <= 4)
         greet = "凌晨好  ";
-    if (hrs < 9) 
+    if (hrs >= 5 && hrs <= 8) 
         greet = "早上好  ";
-    if (hrs < 12) 
+    if (hrs >= 9 && hrs <= 11) 
         greet = "上午好  ";
-    if (hrs < 14) 
+    if (hrs >= 12 && hrs <= 13) 
         greet = "中午好  ";
-    if (hrs < 17) 
+    if (hrs >= 14 && hrs <= 17) 
         greet = "下午好  ";
-    if (hrs < 19) 
+    if (hrs >= 18 && hrs <= 19) 
         greet = "傍晚好  ";
-    if (hrs < 22) 
+    if (hrs >= 19 && hrs <= 22) 
        greet = "晚上好  ";
-    if (hrs < 24) 
+    if (hrs >= 22 && hrs <= 24) 
        greet = "夜深了  ";
 
     document.getElementById('lbl').innerHTML =
